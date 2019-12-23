@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles/css/style.css">
+	<link rel="import" href="/html/loginForm.html">
+</head>
+<body>
+	<script>
+      var link = document.querySelector('link[rel=import]');
+      var content = link.import.querySelector('#loginForm');
+      document.body.appendChild(content.cloneNode(true));
+    </script>
+</body>
+</html>
