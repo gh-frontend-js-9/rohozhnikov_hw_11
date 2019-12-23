@@ -1,0 +1,5 @@
+*.txt
+*.json
+project/fake_api
+project/gulpfile.js
+project/node_modules
