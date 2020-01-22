@@ -16,16 +16,17 @@
         <div class="wrapper__item">
             <h1>Reset Password</h1>
             <p>Please enter you new password</p>
-            <form id="signUpForm" class="login__form" action="https://geekhub-frontend-js-9.herokuapp.com/api/users" method="POST">
+            <form id="resetPasswordForm" class="login__form" action="https://geekhub-frontend-js-9.herokuapp.com/api/users/reset_password" method="POST">
+                <input type="email" name="email" id="email" placeholder="Email">
                 <input type="password" name="password" id="password" placeholder="Password">
-                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password">
+                <input type="password" name="confirmationPassword" id="confirmationPassword" placeholder="Confirm password">
                 <p>redText</p>
                 <button type="submit">Sign up</button>
             </form>
         </div>
     </div>
 
-    <script type="module" src="signUp.js">
+    <script type="module" src="resetPassword.js">
     </script>
 </body>
 </html>

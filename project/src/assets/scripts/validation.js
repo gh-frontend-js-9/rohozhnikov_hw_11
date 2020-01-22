@@ -32,14 +32,14 @@ export function validName(input) {
         input.nextSibling.remove()
     }
 }
-//
-export function validPasswords(pass1, pass2) {
-    if (pass1.value !== pass2.value && pass2.style.borderColor !== 'red') {
-        required(pass2, 'Does not match password')
 
-    } else if (pass2.style.borderColor === 'red') {
-        pass2.style.border = '1px solid black';
-        pass2.nextSibling.remove()
+export function validPasswords(password, confirmationPassword) {
+    if (password.value !== confirmationPassword.value && confirmationPassword.style.borderColor !== 'red') {
+        required(confirmationPassword, 'Does not match password')
+
+    } else if (confirmationPassword.style.borderColor === 'red') {
+        confirmationPassword.style.border = '1px solid black';
+        confirmationPassword.nextSibling.remove()
     }
 
 }
